@@ -11,27 +11,20 @@ The data for this assignment are available from the course web site as a single 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip">Data for Peer Assessment</a> [29Mb]
 The zip file contains two files:
 
-<b>1.</b> PM2.5 Emissions Data (summarySCC_PM25.rds): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. Here are the first few rows:
+<b>1.</b> PM2.5 Emissions Data (summarySCC_PM25.rds): This file contains a data frame with all of the PM2.5 emissions data for 1999, 2002, 2005, and 2008. For each year, the table contains number of tons of PM2.5 emitted from a specific type of source for the entire year. It has following variables:
 
-     fips      SCC Pollutant Emissions  type year
- 4  09001 10100401  PM25-PRI    15.714 POINT 1999
- 8  09001 10100404  PM25-PRI   234.178 POINT 1999
- 12 09001 10100501  PM25-PRI     0.128 POINT 1999
- 16 09001 10200401  PM25-PRI     2.036 POINT 1999
- 20 09001 10200504  PM25-PRI     0.388 POINT 1999
- 24 09001 10200602  PM25-PRI     1.490 POINT 1999
+   
+<b>fips</b>: A five-digit number (represented as a string) indicating the U.S. county
 
-fips: A five-digit number (represented as a string) indicating the U.S. county
+<b>SCC</b>: The name of the source as indicated by a digit string
 
-SCC: The name of the source as indicated by a digit string
+<b>Pollutant</b>: A string indicating the pollutant
 
-Pollutant: A string indicating the pollutant
+<b>Emissions</b>: Amount of PM2.5 emitted, in tons
 
-Emissions: Amount of PM2.5 emitted, in tons
+<b>type</b>: The type of source (point, non-point, on-road, or non-road)
 
-type: The type of source (point, non-point, on-road, or non-road)
-
-year: The year of emissions recorded
+<b>year</b>: The year of emissions recorded
 
 <b>2.</b> Source Classification Code Table (Source_Classification_Code.rds): This table provides a mapping from the SCC digit strings in the Emissions table to the actual name of the PM2.5 source. The sources are categorized in a few different ways from more general to more specific.
 
